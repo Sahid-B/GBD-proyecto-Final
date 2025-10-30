@@ -85,7 +85,6 @@ $ultimas_compras = array_slice(array_reverse($_SESSION['db']['transacciones']), 
 
     <h3 class="mt-4">Enlaces Rápidos</h3>
     <a href="admin_usuarios.php" class="btn btn-secondary">Gestionar Usuarios</a>
-    <a href="catalogo.php" class="btn btn-secondary">Gestionar Juegos</a>
 </div>
 
 <?php include 'footer.php'; ?>

@@ -60,6 +60,26 @@ body {
     color: var(--light-text);
 }
 
+.filter-panel {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--light-text);
+}
+
+.filter-panel .form-label,
+.filter-panel label {
+    color: var(--light-text);
+}
+
+.filter-panel .btn {
+    color: #fff;
+}
+
+.price-text {
+    color: var(--light-text);
+    font-weight: 600;
+}
+
 /* --- Cards de Juegos --- */
 .card {
     background-color: var(--card-bg);

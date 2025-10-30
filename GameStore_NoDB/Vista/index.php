@@ -52,7 +52,12 @@ $new_games = array_slice($juegos, 7, 4);
                     </div>
                     <div class="card-footer d-flex justify-content-between align-items-center">
                         <span class="fw-bold fs-5 text-neon">$<?php echo htmlspecialchars($game['precio']); ?></span>
-                        <a href="#" class="btn btn-primary btn-sm">Añadir al Carrito</a>
+                        <form action="../Controlador/carrito_acciones.php" method="post" class="m-0">
+                            <input type="hidden" name="action" value="add">
+                            <input type="hidden" name="id_juego" value="<?php echo $game['id_juego']; ?>">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="btn btn-primary btn-sm">Añadir al Carrito</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -72,7 +77,12 @@ $new_games = array_slice($juegos, 7, 4);
                     </div>
                     <div class="card-footer d-flex justify-content-between align-items-center">
                         <span class="fw-bold fs-5 text-neon">$<?php echo htmlspecialchars($game['precio']); ?></span>
-                        <a href="#" class="btn btn-primary btn-sm">Añadir al Carrito</a>
+                        <form action="../Controlador/carrito_acciones.php" method="post" class="m-0">
+                            <input type="hidden" name="action" value="add">
+                            <input type="hidden" name="id_juego" value="<?php echo $game['id_juego']; ?>">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="btn btn-primary btn-sm">Añadir al Carrito</button>
+                        </form>
                     </div>
                 </div>
             </div>
