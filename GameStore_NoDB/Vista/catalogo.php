@@ -57,7 +57,7 @@ $juegos_en_pagina = array_slice($juegos, $offset, $juegos_por_pagina);
     <p class="text-muted">Se encontraron <?php echo $total_juegos; ?> juegos.</p>
 
     <!-- Filter and Sort Form -->
-    <form action="catalogo.php" method="GET" class="mb-4 p-3 bg-light border rounded">
+    <form action="catalogo.php" method="GET" class="mb-4 p-3 filter-panel rounded">
         <div class="row g-3">
             <div class="col-md-4">
                 <label for="busqueda" class="form-label">Buscar por nombre</label>
@@ -98,7 +98,7 @@ $juegos_en_pagina = array_slice($juegos, $offset, $juegos_por_pagina);
                     <div class="card-body">
                         <h5 class="card-title"><?php echo htmlspecialchars($juego['titulo']); ?></h5>
                         <p class="card-text text-muted"><?php echo htmlspecialchars($juego['genero']); ?></p>
-                        <p class="card-text h4">$<?php echo number_format($juego['precio'], 2); ?></p>
+                        <p class="card-text h4 price-text">$<?php echo number_format($juego['precio'], 2); ?></p>
                     </div>
                     <div class="card-footer">
                         <a href="detalle_juego.php?id=<?php echo $juego['id_juego']; ?>" class="btn btn-secondary w-100">Ver Detalles</a>
