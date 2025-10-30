@@ -20,7 +20,7 @@ class Memoria {
             ];
 
             // Add default users
-            $admin_id = self::addUser('Admin', 'admin@gamestore.com', 'admin', 'admin');
+            $admin_id = self::addUser('Administrador', 'admin@gmail.com', 'admin123!', 'admin');
             $vendedor_id = self::addUser('Vendedor Uno', 'vendedor@gamestore.com', 'vendedor', 'vendedor');
             self::addUser('Cliente Uno', 'cliente@gamestore.com', 'cliente', 'cliente');
 

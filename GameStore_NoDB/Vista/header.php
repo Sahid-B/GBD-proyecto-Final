@@ -35,7 +35,11 @@ $cart_item_count = isset($_SESSION['carrito']) ? count($_SESSION['carrito']) : 0
                     </li>
                     <?php if (isset($_SESSION['rol']) && $_SESSION['rol'] === 'admin'): ?>
                         <li class="nav-item">
-                            <a class="nav-link" href="admin_dashboard.php">Panel</a>
+                            <a class="nav-link" href="admin_dashboard.php">Panel de Administración</a>
+                        </li>
+                    <?php elseif (isset($_SESSION['rol']) && $_SESSION['rol'] === 'vendedor'): ?>
+                        <li class="nav-item">
+                            <a class="nav-link" href="panel.php">Panel de Ventas</a>
                         </li>
                     <?php endif; ?>
                 </ul>
@@ -70,5 +74,5 @@ $cart_item_count = isset($_SESSION['carrito']) ? count($_SESSION['carrito']) : 0
     </nav>
 </header>
 
-<main class="flex-shrink-0" style="padding-top: 56px;">
+<main class="flex-grow-1 main-content">
     <div class="container py-5">
